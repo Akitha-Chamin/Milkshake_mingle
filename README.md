@@ -1,4 +1,4 @@
-🥤 Milkshake Mingles – Ecommerce Website
+* Milkshake Mingles – Ecommerce Website *
 
 A fully animated, 5-page ecommerce frontend for a milkshake shop based in Colombo, Sri Lanka.
 This project includes product pages, animated transitions, description popups, a cart system, and a checkout flow (stopping at the final checkout button).
