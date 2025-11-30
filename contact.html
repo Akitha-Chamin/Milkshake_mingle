@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Milkshake Mingles</title>
+    <link rel="icon" type="image/png" href="milksh.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo-container">
+            <div class="logo-box"><img src="logo.png" class="logo-img"></div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Collection</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html" class="active">Find Us</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="cart-btn" onclick="toggleCart()">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section-pad contact-split">
+        <div class="contact-form">
+            <h2>Let's <span class="highlight">Mingle</span></h2>
+            <p style="margin-bottom: 20px;">Got a flavor idea? Want to book us for a party? Drop a message!</p>
+            <form>
+                <div class="form-group"><input type="text" placeholder="Your Name"></div>
+                <div class="form-group"><input type="text" placeholder="Phone Number"></div>
+                <div class="form-group">
+                    <select>
+                        <option>General Inquiry</option>
+                        <option>Party Catering</option>
+                        <option>Complaint (We hope not!)</option>
+                    </select>
+                </div>
+                <div class="form-group"><textarea rows="5" placeholder="Your Message"></textarea></div>
+                <button class="btn primary-btn" type="button">Send Message</button>
+            </form>
+        </div>
+
+        <div style="background: #E0F7FA; border-radius: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px;">
+            <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: var(--primary); margin-bottom: 20px; animation: bounce 2s infinite;"></i>
+            <h3 style="font-family: var(--font-heading); font-size: 2rem;">Colombo 07</h3>
+            <p>24, Flower Road, Colombo</p>
+            <p style="margin-top: 20px;"><strong>Open Daily:</strong></p>
+            <p>10:00 AM - 10:00 PM</p>
+            <button class="btn secondary-btn" style="margin-top: 20px;">Get Directions</button>
+        </div>
+    </div>
+
+    <div class="section-pad faq-section">
+        <h2 class="text-center" style="margin-bottom: 30px; font-family: var(--font-heading);">Freqently Asked <span class="highlight">Questions</span></h2>
+        
+        <div class="faq-item">
+            <h4>Do you deliver?</h4>
+            <p>Currently, we are only on UberEats and PickMe Food within Colombo 1-15.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Are your shakes Halal?</h4>
+            <p>Yes! All our ingredients are 100% Halal certified.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Do you have vegan options?</h4>
+            <p>We are working on a coconut-milk based range. Stay tuned!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2><img src="logo.png" class="center"></h2>
+                <p class="center">Shaking up Colombo one cup at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Full Menu</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2025 Milkshake Mingles Sri Lanka.</div>
+    </footer>
+
+    <div id="cart-placeholder"></div>
+    <div id="checkout-modal-placeholder"></div>
+    <script src="script.js"></script>
+</body>
+</html>

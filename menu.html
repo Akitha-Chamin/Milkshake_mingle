@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Milkshake Mingles</title>
+    <link rel="icon" type="image/png" href="milksh.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo-container">
+            <div class="logo-box"><img src="logo.png" class="logo-img"></div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Collection</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Find Us</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="cart-btn" onclick="toggleCart()">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section-pad text-center" style="background-color: #FFF0F6;">
+        <h2 style="font-family: var(--font-heading); font-size: 3rem;">The <span class="highlight">Collection</span></h2>
+        <p>Curated flavors for the discerning sipper.</p>
+        <div class="scrolling-text" style="transform: none; margin: 30px 0;">
+             <span>ORDER ONLINE • PICKUP IN STORE • FRESH INGREDIENTS • ORDER ONLINE • PICKUP IN STORE</span>
+        </div>
+    </div>
+
+    <div class="section-pad">
+        <h3 style="font-size: 2rem; margin-bottom: 20px; color: var(--primary);">🍓 Fruity Favorites</h3>
+        <div class="menu-grid">
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="str.png" alt="Strawberry"></div>
+                <div class="card-info">
+                    <h3>Strawberry Bliss</h3>
+                    <p>Nuwara Eliya berries & vanilla.</p>
+                    <div class="price-row"><strong>Rs. 950</strong> <button class="add-btn" onclick="addToCart('Strawberry Bliss', 950, 'str.png')">+</button></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="man.png" alt="Mango"></div>
+                <div class="card-info">
+                    <h3>Mango Magic</h3>
+                    <p>Jaffna Karthacolomban blend.</p>
+                    <div class="price-row"><strong>Rs. 850</strong> <button class="add-btn" onclick="addToCart('Mango Magic', 850, 'man.png')">+</button></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="ava.png" alt="Avocado"></div>
+                <div class="card-info">
+                    <h3>Avocado Dream</h3>
+                    <p>Buttery avocado & bees honey.</p>
+                    <div class="price-row"><strong>Rs. 1200</strong> <button class="add-btn" onclick="addToCart('Avocado Dream', 1200, 'ava.png')">+</button></div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="font-size: 2rem; margin-bottom: 20px; color: var(--dark);">🍫 Choco & Cookies</h3>
+        <div class="menu-grid">
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="cho.png" alt="Choco"></div>
+                <div class="card-info">
+                    <h3>Choco Crunch</h3>
+                    <p>Oreo overload with fudge.</p>
+                    <div class="price-row"><strong>Rs. 1100</strong> <button class="add-btn" onclick="addToCart('Choco Crunch', 1100, 'cho.png')">+</button></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="van.png" alt="Vanilla"></div>
+                <div class="card-info">
+                    <h3>Vanilla Bean Sky</h3>
+                    <p>Classic vanilla with sprinkles.</p>
+                    <div class="price-row"><strong>Rs. 900</strong> <button class="add-btn" onclick="addToCart('Vanilla Sky', 900, 'van.png')">+</button></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="kit.png" alt="Kitkat"></div>
+                <div class="card-info">
+                    <h3>KitKat Break</h3>
+                    <p>Wafer chocolate blended thick.</p>
+                    <div class="price-row"><strong>Rs. 1300</strong> <button class="add-btn" onclick="addToCart('KitKat Break', 1300, 'kit.png')">+</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2><img src="logo.png" class="center"></h2>
+                <p class="center">Shaking up Colombo one cup at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Full Menu</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2025 Milkshake Mingles Sri Lanka.</div>
+    </footer>
+
+    <div id="cart-placeholder"></div>
+    <div id="checkout-modal-placeholder"></div>
+    <script src="script.js"></script>
+</body>
+</html>

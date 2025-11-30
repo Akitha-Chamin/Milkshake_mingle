@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milkshake Mingles | Sip the Magic</title>
+      <link rel="icon" type="image/png" href="milksh.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo-container">
+            <div class="logo-box"><img src="logo.png" class="logo-img"></div>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="menu.html">Collection</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Find Us</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="cart-btn" onclick="toggleCart()">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+   <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Crazy Shakes.<br> <span class="highlight">Zero Regrets.</span></h1>
+            <p>Welcome to Colombo's loudest, proudest milkshake joint. We don't just blend milk; we engineer happiness in a cup. Topped high, drizzled deep, and served with a smile.</p>
+            <div style="margin-top: 20px;">
+                <a href="menu.html" class="btn primary-btn">Start Slurping <i class="fas fa-arrow-right"></i></a>
+                <a href="#reviews" class="btn secondary-btn" style="margin-left: 10px;">Read Reviews</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="video-wrapper" id="videoContainer" style="cursor: pointer;">
+                <video id="heroVideo" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&q=80">
+                    <source src="Generate_a_1_202512010040_6kzwk.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCROLLING TEXT -->
+    <div class="scrolling-text">
+        <span>🍓 FRESH FRUIT 🥭 NO SYRUPS 🍫 BELGIUM CHOCOLATE 🍦 PREMIUM ICE CREAM 🌴 SRI LANKAN SPICE 🥤 FRESH FRUIT 🥭</span>
+    </div>
+
+    <!-- NEW ARRIVALS -->
+    <section class="section-pad text-center">
+        <h2 style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: 1rem;">This Week's <span class="highlight">Obsessions</span></h2>
+        <p style="margin-bottom: 3rem;">The flavors Colombo can't stop talking about.</p>
+        
+        <div class="menu-grid">
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="str.png" alt="Shake"></div>
+                <div class="card-info">
+                    <h3>The Pink Panther</h3>
+                    <p>Strawberry & Marshmallow fluff.</p>
+                    <div class="price-row"><strong>Rs. 950</strong> <button class="add-btn" onclick="addToCart('Pink Panther', 950, 'str.png)">+</button></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-img-wrapper"><img src="car.png" alt="Shake"></div>
+                <div class="card-info">
+                    <h3>Salted Caramel Pop</h3>
+                    <p>Caramel corn topping.</p>
+                    <div class="price-row"><strong>Rs. 1100</strong> <button class="add-btn" onclick="addToCart('Salted Caramel', 1100, 'car.png)">+</button></div>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="card-img-wrapper"><img src="cho.png" alt="Shake"></div>
+                <div class="card-info">
+                    <h3>Chocozilla</h3>
+                    <p>Death by Chocolate.</p>
+                    <div class="price-row"><strong>Rs. 1250</strong> <button class="add-btn" onclick="addToCart('Chocozilla', 1250, 'cho.png)">+</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="reviews" class="section-pad" style="background-color: #E6F7FF;">
+        <div class="text-center">
+            <h2 style="font-family: var(--font-heading); font-size: 3rem;">Fan <span class="highlight">Love</span></h2>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <p>"I drove all the way from Galle just for the Mango Magic. Totally worth the petrol! The texture is unreal."</p>
+                <div class="user-info">
+                    <img src="https://randomuser.me/api/portraits/men/10.jpg" class="user-avatar">
+                    <strong>Kasun Perera</strong>
+                </div>
+            </div>
+            <div class="review-card">
+                <p>"Finally a place in Colombo that doesn't just use sugar syrup. You can actually taste the fruit. 10/10!"</p>
+                <div class="user-info">
+                    <img src="https://randomuser.me/api/portraits/women/21.jpg" class="user-avatar">
+                    <strong>Nimali Dias</strong>
+                </div>
+            </div>
+            <div class="review-card">
+                <p>"The Avocado Dream is literally a dream. So creamy. Great vibes in the shop too."</p>
+                <div class="user-info">
+                    <img src="https://randomuser.me/api/portraits/women/62.jpg" class="user-avatar">
+                    <strong>Shenali K.</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2><img src="logo.png" class="center"></h2>
+                <p class="center">Shaking up Colombo one cup at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Full Menu</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2025 Milkshake Mingles Sri Lanka.</div>
+    </footer>
+
+    <div id="cart-placeholder"></div>
+    <div id="checkout-modal-placeholder"></div>
+    <script src="script.js"></script>
+</body>
+</html>

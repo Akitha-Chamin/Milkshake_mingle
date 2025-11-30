@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Milkshake Mingles</title>
+    <link rel="icon" type="image/png" href="milksh.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo-container">
+            <div class="logo-box"><img src="logo.png" class="logo-img"></div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Collection</a></li>
+            <li><a href="about.html" class="active">Our Story</a></li>
+            <li><a href="contact.html">Find Us</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="cart-btn" onclick="toggleCart()">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-pad about-split">
+        <div class="about-img-box">
+            <img src="logo.png" alt="Our Shop">
+        </div>
+        <div>
+            <h2>How it all <span class="highlight">Started</span></h2>
+            <p>It was a hot afternoon in Colombo 07. We wanted a milkshake. Not a watery, sad, milk-flavored drink, but a THICK, soul-satisfying shake.</p>
+            <p>We couldn't find one. So, we bought a blender.</p>
+            <p><strong>Milkshake Mingles</strong> was born out of obsession. We tested 50 types of vanilla ice cream before finding "The One." We source our fruits directly from farmers in Nuwara Eliya and Jaffna. Every cup is a labor of love.</p>
+        </div>
+    </section>
+
+    <section class="section-pad" style="background: #E6F7FF;">
+        <div class="text-center">
+            <h2 style="font-family: var(--font-heading);">Meet the <span class="highlight">Shakers</span></h2>
+            <p>The legends behind the blenders.</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Member">
+                <h3>Dilshan</h3>
+                <p>Founder</p>
+            </div>
+             <div class="team-member">
+                <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Member">
+                <h3>Supun</h3>
+                <p>Chief Taster</p>
+            </div>
+            <div class="team-member">
+                <img src="https://randomuser.me/api/portraits/women/51.jpg" alt="Member">
+                <h3>Ayesha</h3>
+                <p>Head of Flavor R&D</p>
+            </div>
+            <div class="team-member">
+                <img src="https://randomuser.me/api/portraits/men/98.jpg" alt="Member">
+                <h3>Rohan</h3>
+                <p>Master Blender</p>
+            </div>
+             <div class="team-member">
+                <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Member">
+                <h3>Kavindi</h3>
+                <p>Topping Artist</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2><img src="logo.png" class="center"></h2>
+                <p class="center">Shaking up Colombo one cup at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Full Menu</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2025 Milkshake Mingles Sri Lanka.</div>
+    </footer>
+
+    <div id="cart-placeholder"></div>
+    <div id="checkout-modal-placeholder"></div>
+    <script src="script.js"></script>
+</body>
+</html>
