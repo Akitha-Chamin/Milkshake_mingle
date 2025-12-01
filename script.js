@@ -130,4 +130,20 @@ function showCheckoutPopup() {
 
 function closeCheckoutPopup() {
     document.getElementById('checkoutModal').style.display = 'none';
+
+}
+
+function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const hamburgerIcon = document.querySelector('.hamburger i');
+    
+    navLinks.classList.toggle('active');
+
+    if (navLinks.classList.contains('active')) {
+        hamburgerIcon.classList.remove('fa-bars');
+        hamburgerIcon.classList.add('fa-times');
+    } else {
+        hamburgerIcon.classList.remove('fa-times');
+        hamburgerIcon.classList.add('fa-bars');
+    }
 }
