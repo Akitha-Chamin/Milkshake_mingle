@@ -160,4 +160,52 @@ footer { background: var(--dark); color: white; padding: 4rem 10% 2rem; margin-t
     .footer-grid { grid-template-columns: 1fr; }
     .nav-links { display: none; }
     h1 { font-size: 3rem; }
+
+}
+/* HAMBURGER MENU STYLES */
+.hamburger {
+    display: none; /* Hidden on desktop */
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-left: 20px;
+    color: var(--dark);
+}
+
+
+@media(max-width: 768px) {
+
+    .hamburger { display: block; }
+    
+    .brand-name { font-size: 1.2rem; } 
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 20px;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+        
+        /* Animation properties */
+        transform: translateY(-200%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+        
+        display: flex !important; 
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+    }
+
+    .hero-visual {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 9/16;
+        max-width: 320px;
+    }
 }
