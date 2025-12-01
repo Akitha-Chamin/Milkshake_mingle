@@ -11,22 +11,29 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo-container">
-            <div class="logo-box"><img src="logo.png" class="logo-img"></div>
-        </a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Collection</a></li>
-            <li><a href="about.html" class="active">Our Story</a></li>
-            <li><a href="contact.html">Find Us</a></li>
-        </ul>
-        <div class="nav-icons">
-            <div class="cart-btn" onclick="toggleCart()">
-                <i class="fa-solid fa-basket-shopping"></i>
-                <span id="cart-count">0</span>
-            </div>
+    <a href="index.html" class="logo-container">
+        <div class="logo-box"><img src="https://placehold.co/100x100/FF5DA2/FFFFFF?text=MM" class="logo-img"></div>
+        <span class="brand-name">Milkshake Mingles</span>
+    </a>
+    
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Collection</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Find Us</a></li>
+    </ul>
+
+    <div class="nav-icons">
+        <div class="cart-btn" onclick="toggleCart()">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span id="cart-count">0</span>
         </div>
-    </nav>
+        
+        <div class="hamburger" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
 
     <section class="section-pad about-split">
         <div class="about-img-box">
@@ -105,4 +112,5 @@
     <div id="checkout-modal-placeholder"></div>
     <script src="script.js"></script>
 </body>
+
 </html>
